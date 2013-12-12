@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FMDB/FMDatabase.h"
+#import <FMDB/FMDatabase.h>
 #import "FmdbMigrationColumn.h"
 
 @interface FmdbMigration : NSObject {

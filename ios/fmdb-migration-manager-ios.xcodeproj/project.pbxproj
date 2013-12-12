@@ -363,6 +363,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"$(BUILT_PRODUCTS_DIR)\"/**";
 			};
 			name = Debug;
 		};
@@ -376,6 +377,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"$(BUILT_PRODUCTS_DIR)\"/**";
 			};
 			name = Release;
 		};
