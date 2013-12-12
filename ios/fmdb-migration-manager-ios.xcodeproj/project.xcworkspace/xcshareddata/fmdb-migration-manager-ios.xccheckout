@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>74FC7B56-FFB7-4FC8-ABCD-DD00C9459CCA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fmdb-migration-manager-ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>627154AD-D495-4C41-8FF6-9F54763F508F</key>
+		<string>https://github.com/anilanar/fmdb-migration-manager.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/fmdb-migration-manager-ios/fmdb-migration-manager-ios.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>627154AD-D495-4C41-8FF6-9F54763F508F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/anilanar/fmdb-migration-manager.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>627154AD-D495-4C41-8FF6-9F54763F508F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>627154AD-D495-4C41-8FF6-9F54763F508F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fmdb-migration-manager</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -19,7 +19,7 @@
 
 + (id)executeForDatabasePath:(NSString *)aPath withMigrations:(NSArray *)migrations
 {
-	FmdbMigrationManager *manager = [[[self alloc] initWithDatabasePath:aPath] autorelease];
+	FmdbMigrationManager *manager = [[self alloc] initWithDatabasePath:aPath];
 	manager.migrations = migrations;
 	[manager executeMigrations];
 	return manager;
@@ -27,7 +27,7 @@
 
 + (id)executeForDatabasePath:(NSString *)aPath withMigrations:(NSArray *)migrations andMatchVersion:(NSInteger)aVersion
 {
-	FmdbMigrationManager *manager = [[[self alloc] initWithDatabasePath:aPath] autorelease];
+	FmdbMigrationManager *manager = [[self alloc] initWithDatabasePath:aPath];
 	manager.migrations = migrations;
 	[manager executeMigrationsAndMatchVersion:aVersion];
 	return manager;
@@ -52,8 +52,6 @@
 	NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS %@ (version INTEGER unique default 0)", self.schemaMigrationsTableName];
 	[db_ executeUpdate:sql];
 	// TODO: add index on version column 'unique_schema_migrations'
-
-	[self currentVersion]; // generates first version or stores version in currentVersion_
 }
 
 - (void)performMigrations
@@ -132,11 +130,6 @@
 - (void)dealloc
 {
 	[db_ close];
-	[db_ release];
-	[migrations_ release];
-	[schemaMigrationsTableName_ release];
-
-	[super dealloc];
 }
 @end
 

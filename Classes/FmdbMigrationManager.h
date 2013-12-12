@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FMDatabase.h"
+#import <FMDB/FMDatabase.h>
 
 @interface FmdbMigrationManager : NSObject {
 	FMDatabase *db_;
@@ -15,10 +15,10 @@
 	NSInteger currentVersion_;
 	NSString *schemaMigrationsTableName_;
 }
-@property (retain) FMDatabase *db;
-@property (retain) NSArray *migrations;
-@property (assign,readonly) NSInteger currentVersion;
-@property (readonly) NSString *schemaMigrationsTableName;
+@property(nonatomic, strong) FMDatabase *db;
+@property(nonatomic, strong) NSArray *migrations;
+@property(assign,readonly) NSInteger currentVersion;
+@property(nonatomic, strong, readonly) NSString *schemaMigrationsTableName;
 
 + (id)executeForDatabasePath:(NSString *)aPath withMigrations:(NSArray *)migrations;
 
